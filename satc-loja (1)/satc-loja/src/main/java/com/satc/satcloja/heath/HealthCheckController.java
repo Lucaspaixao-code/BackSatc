@@ -3,7 +3,6 @@ package com.satc.satcloja.heath;
 import com.fasterxml.jackson.databind.util.JSONPObject;
 import com.satc.satcloja.model.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.Json
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.satc.satcloja.repository.*;
@@ -66,6 +65,6 @@ public class HealthCheckController {
 
         vendaRepository.save(venda);
 
-        return object "Comando Executado";
+        return "Comando Executado";
     }
 }
